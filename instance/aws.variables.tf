@@ -29,3 +29,19 @@ variable "instance_counts" {
   description = "EC2 instance counts"
   default = 1
 }
+variable "spot_instance_counts" {
+  description = "EC2 spot instance counts"
+  default = 1
+}
+variable "spot_instance_type" {
+  description = "EC2 spot instance type"
+  default = "one-time"
+}
+variable "spot_price" {
+  description = "EC2 spot instance price"
+  default = 0.02
+}
+variable "spot_wait_for_fulfillment" {
+  description = "EC2 spot instance wait for fulfillment"
+  default = true
+}
